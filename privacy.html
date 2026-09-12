@@ -11,6 +11,7 @@
       --text: #f8fafc;
       --text-muted: #94a3b8;
       --accent: #38bdf8;
+      --accent-hover: #7dd3fc;
       --border: #334155;
     }
 
@@ -52,6 +53,7 @@
     }
 
     .back-link:hover {
+      color: var(--accent-hover);
       text-decoration: underline;
     }
 
@@ -84,6 +86,15 @@
       margin-bottom: 12px;
     }
 
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+    }
+
     ul {
       margin-left: 20px;
       margin-bottom: 12px;
@@ -100,7 +111,7 @@
 
     footer a {
       color: var(--accent);
-      text-decoration: none;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -139,7 +150,13 @@
       <li><strong>RevenueCat:</strong> For subscription infrastructure and receipt validation.</li>
       <li><strong>Google Gemini API:</strong> For optional artificial intelligence text generation based on your logs.</li>
     </ul>
-    <p>Third-Party Privacy Policies: Firebase, RevenueCat, Google General, Google Dev Terms, Google Dev Privacy</p>
+    <p>Third-Party Privacy Policies: 
+      <a href="#" target="_blank">Firebase</a>, 
+      <a href="#" target="https://www.revenuecat.com/privacy">RevenueCat</a>, 
+      <a href="#" target="https://policies.google.com/privacy?client_theme=dark">Google General</a>, 
+      <a href="#" target="https://ai.google.dev/gemini-api/terms">Google Dev Terms</a>, 
+      <a href="#" target="https://developers.google.com/terms/api-services-user-data-policy">Google Dev Privacy</a>
+    </p>
 
     <h2>5. International Data Transfers</h2>
     <p>Because our infrastructure partners operate globally, your information may be transferred to and processed on servers located in the United States. All international data transfers from the EU or UK comply with legal frameworks utilizing the European Commission's Standard Contractual Clauses (SCCs) and certified data privacy frameworks.</p>
